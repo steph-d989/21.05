@@ -1,0 +1,32 @@
+*{
+font-size: 1.2 em;
+font-family: 'Courier New', Courier, monospace;
+}
+.boton{
+    border-radius: 15%;
+    padding: 5px;
+    transition-duration: 0.5s;
+    justify-self: center;
+}
+.boton:hover {
+    background-color: #000000;
+    color: #ebebeb;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width:  60%;
+    height: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+select{
+    height: 30px;
+}
+fieldset {
+    width: 50%;
+}
+.peliFiltro {
+    width: 50%;
+}
