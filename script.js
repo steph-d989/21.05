@@ -32,8 +32,7 @@ formulario.addEventListener('submit',(ev)=>{
     pintarTabla(arrayPeliIngresada);
 })
 formulario.addEventListener('change',(ev)=>{
-
-    
+   
 })
 
 
@@ -67,6 +66,9 @@ const pintarTabla=(array)=>{
     })
 }
 
+const limpiarTabla=()=>{
+    cuerpoTabla.innerHTML = '';
+}
 
 const validarForm = ()=>{
 
