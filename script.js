@@ -82,27 +82,33 @@ const validarForm = ()=>{
             objValidar.nombre = 'bien'
         }else{
             objValidar.nombre ='mal'
+            alert('Ingresa un nombre valido!')
         }
     }else{
         objValidar.nombre = 'mal'
+        alert('Ingresa un nombre valido!')
     }
     if(director!==''){
         if(regExp.director.test(director)){
             objValidar.director ='bien'
         }else{
             objValidar.director ='mal'
+            alert('Ingresa un director valido!')
         }
     }else{
         objValidar.director = 'mal'
+        alert('Ingresa un director valido!')
     }
     if(año!==''){
         if((año >= 1800 && año <= añoActual)&&(regExp.año.test(año))){
             objValidar.año = 'bien'
         }else{
             objValidar.año ='mal'
+            alert('Ingresa un año valido!')
         }
     }else{
         objValidar.año = 'mal'
+        alert('Ingresa un año valido!')
     }
 
     const resultadoObjValidar = Object.values(objValidar);
