@@ -2,12 +2,14 @@
 font-size: 1.2 em;
 font-family: 'Courier New', Courier, monospace;
 }
+
 .boton{
     border-radius: 15%;
     padding: 5px;
     transition-duration: 0.5s;
     justify-self: center;
 }
+
 .boton:hover {
     background-color: #000000;
     color: #ebebeb;
@@ -16,17 +18,78 @@ font-family: 'Courier New', Courier, monospace;
 input[type="text"],
 input[type="number"],
 select {
-    width:  60%;
+    width:  50%;
     height: 20px;
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px;    
 }
+
+#formulario 
+(label,
+input[type="text"],
+input[type="number"],
+select){
+flex-direction : column;
+justifay-content: space-between;
+}
+
 select{
     height: 30px;
 }
-fieldset {
-    width: 50%;
-}
+
 .peliFiltro {
     width: 50%;
+    text-align: right;
+    align-self: right;
+}
+
+#tabla {
+border: 1px solid;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+tr:nth-of-type(even){
+    background-color: lightgray;
+}
+tr:nth-of-type(odd){
+    background-color: azure;
+}
+
+th, td { 
+    border: 1px solid;
+    width: 25%;
+}
+
+#pie {
+    width: 70%;
+}
+#infoPeli {
+ margin: auto;
+}
+#filtro {
+    text-align: right;
+}
+
+@media (min-width: 900px){
+    .boton{
+        border-radius: 15%;
+        padding: 5px;
+        transition-duration: 0.5s;
+        justify-self: center;
+        width: 100%;
+    }
+    
+    .boton:hover {
+        background-color: #000000;
+        color: #ebebeb;
+    }
+    #filtro {
+        text-align: center;
+    }
 }

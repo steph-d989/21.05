@@ -14,65 +14,52 @@
     </header>
     <main>
         <section id="infoPeli">
-            <form action="" name="Formulario" onsubmit="" method="">
-                <fieldset>
-                    <legend>
-                        <h3>Peliculas</h3>
-                    </legend>
-                    <div>
-                        <label for="peliName">Nombre de la Película: </label>
-                        <input type="text" id="peliName" class="peliName" placeholder="Nombre de la película...">
-                    </div>
-                    <div>
-                        <label for="peliDirector">Nombre del Director: </label>
-                        <input type="text" id="peliDirector" class="peliDirector" placeholder="Nombre del director...">
-                    </div>
-                    <div>
-                        <label for="peliAno">Año de la película: </label>
-                        <input type="number" id="peliAno" class="peliAno" placeholder="Año de la película...">
-                    </div>
-                    <div>
-                        <label for="peliGenero">Género de la película: </label>
+            <form action="" name="formulario" method="" id="formulario">
+                <div>        
+                <label for="peliName">Nombre de la Película: </label>
+            </div>    
+                <input type="text" id="peliName" class="peliName" placeholder="Nombre de la película...">
+            <div>
+                <label for="peliDirector">Nombre del Director: </label>
+            </div>
+                <input type="text" id="peliDirector" class="peliDirector" placeholder="Nombre del director...">
+            <div>
+                <label for="peliAno">Año de la película: </label>
+            </div>
+                <input type="text" id="peliAno" class="peliAno" placeholder="Año de la película...">
+            <div>
+                <label for="peliGenero">Género de la película: </label>
+            </div>            
                         <select id="peliGenero" class="peliGenero">
-                            <option value="terror">Terror</option>
-                            <option value="acción">Acción</option>
-                            <option value="aventura">Aventura</option>
-                            <option value="fantasía">Fantasía</option>
-                            <option value="thriller">Thriller</option>
+                            
                         </select>
                     </div>
                     <div>
-                        <label for="boton"></label>
-                        <input type="submit" value="Aceptar" id="boton" class="boton">
+                        <input type="submit" value="Aceptar">
                     </div>
-                </fieldset>
+            </form>
         </section>
         <section>
-            <div>
-                <label for="peliFiltro"></label>
                 <select id="peliFiltro" class="peliFiltro">
-                    <option value="terror">Terror</option>
-                    <option value="acción">Acción</option>
-                    <option value="aventura">Aventura</option>
-                    <option value="fantasía">Fantasía</option>
-                    <option value="thriller">Thriller</option>
+
                 </select>
             </div>
-            </form>
-            <table>
-                <tr>
-                    <th>Titulo</th>
-                    <th>Director</th>
-                    <th>Año</th>
-                    <th>Género</th>
-                </tr>
-                <tr>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-            </table>
+
+            <div id="piePagina">
+                <table id="tabla">
+                    <thead>
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Director</th>
+                        <th>Año</th>
+                        <th>Género</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla">
+
+                </tbody>
+                </table>
+            </div>
         </section>
     </main>
     <footer>
